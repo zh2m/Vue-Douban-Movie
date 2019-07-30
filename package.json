@@ -1,19 +1,28 @@
 {
-  "name": "vue-nuxt",
+  "name": "my-nuxt-demo",
   "version": "1.0.0",
-  "description": "My phenomenal Nuxt.js project",
-  "author": "M",
+  "description": "My stunning Nuxt.js project",
+  "author": "Alan",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.4.8",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.11.0",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.0.0"
   }
 }
